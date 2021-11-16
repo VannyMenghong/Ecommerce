@@ -1,5 +1,37 @@
    <!-- Header Section Begin -->
-    <header class="header " >
+   <?php
+        
+        $id=$_GET['id'];
+
+        $home="";
+        $item="";
+        $cart="";
+        $checkout="";
+        $contact="";
+        $home = "";
+        switch($id){
+            case '0':
+                $home = "active";
+                break;
+            case '1':
+                $item = "active";
+                break;
+            case '2':
+                $cart = "active";
+                break;
+            case '3':
+                $checkout = "active";
+                break;
+            case '4':
+                $contact = "active";
+                break;
+        }
+    
+
+   ?>
+   
+   
+   <header class="header " >
         <div class="header__top">
             <div class="container ">
                 <div class="row">
@@ -21,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="container bg-warning mb-2 ">
+        <div class="container  shadow mb-5 ">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
@@ -30,12 +62,13 @@
                 </div>
                 <div class="col-lg-7">
                     <nav class="header__menu ">
-                        <ul     >
-							<li class="active"><a href="./index.php?id=0" style="font-size:17px;">ទំព័រដើម</a></li>
-                            <li><a href="./shop.php?id=1" style="font-size:17px;">ទំនិញ</a></li>
-                            <li><a href="./cart.php?id=2" style="font-size:17px;">មើលទំនិញ</a></li>
-                            <li><a href="./checkout.php?id=3" style="font-size:17px;">បង់ប្រាក់</a></li>
-                            <li><a href="./contact.php?id=4" style="font-size:17px;">ទំនាក់ទំនង</a></li>
+                        <ul>
+
+							<li class="<?= $home; ?>"><a href="./index.php?id=0" style="font-size:17px;">ទំព័រដើម</a></li>
+                            <li class="<?= $item; ?>"><a  href="./shop.php?id=1" style="font-size:17px;">ទំនិញ</a></li>
+                            <li class="<?= $cart; ?>"><a href="./cart.php?id=2" style="font-size:17px;">មើលទំនិញ</a></li>
+                            <li class="<?= $checkout; ?>"><a href="./checkout.php?id=3" style="font-size:17px;">បង់ប្រាក់</a></li>
+                            <li class="<?= $contact; ?>"><a href="./contact.php?id=4" style="font-size:17px;">ទំនាក់ទំនង</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -68,7 +101,7 @@
                             <span>ប្រភេទទំនិញ</span>
                         </div>
                         <ul>
-                            <li><a href="#">Fresh Meat</a></li>
+                            <li><a​ href="#">Fresh Meat</a​></li>
                             <li><a href="#">Vegetables</a></li>
                             <li><a href="#">Fruit & Nut Gifts</a></li>
                             <li><a href="#">Fresh Berries</a></li>

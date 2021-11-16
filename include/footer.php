@@ -8,40 +8,33 @@
                             <a href="./index.html"><img src="img/logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>អាស័យដ្នាន​ : សង្កាត់ផ្សារដេប៉ូ១ ខណ្ឌទួលគក រាជធានីភ្នំពេញ</li>
+                            <li>លេខទូរស័ព្ទ : 077 645 994</li>
+                            <li>អុីមែ៉ល: Vannyhong99@gmail.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                     <div class="footer__widget">
-                        <h6>Useful Links</h6>
+                        <h6>គេហទំព័រ​ : </h6>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">About Our Shop</a></li>
-                            <li><a href="#">Secure Shopping</a></li>
-                            <li><a href="#">Delivery infomation</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">ទំព័រដើម</a></li>
+                            <li><a href="#">ទំនេញ</a></li>
+                            <li><a href="#">ពិនិត្យកញ្ចប់ទំនិញ</a></li>
+                            <li><a href="#">បង់ប្រាក់</a></li>
+                            <li><a href="#">ទំនាក់ទំនងពួកយើង</a></li>
+
                         </ul>
-                        <ul>
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Innovation</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                        </ul>
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <h6>បញ្ចូលអុីម៉ែលរបស់អ្នកដើម្បីទទួលបានព័ត៍មានមុនគេ</h6>
+                        <p>ពីប្រូម៉ូសិននិង​ព័ត៍មានផ្សេងៗ
                         <form action="#">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Subscribe</button>
+                            <input type="text" placeholder="អុីម៉ែល">
+                            <button type="submit" class="site-btn">ចុចបញ្ចូន</button>
                         </form>
                         <div class="footer__widget__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>

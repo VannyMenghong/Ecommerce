@@ -10,10 +10,11 @@
  
  
  <!-- Categories Section Begin -->
-<div class="section-title">
-    <h2>ទំនិញពេញនិយម</h2>
+
+    <section class="categories my-5">
+    <div class="section-title">
+    <h2>ប្រភេទទំនេញ</h2>
 </div>
-    <section class="categories mt-4">
         <div class="container">
             <div class="row">
                 <div class="categories__slider owl-carousel" >
