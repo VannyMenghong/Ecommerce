@@ -1,10 +1,19 @@
+    <?php
 
+        include ("dbconnection/db.php");
+        $sql = "SELECT * FROM carts ; ";
+        $result = mysqli_query($con, $sql);
+        
+
+    ?>
+    
+    
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="text-center" style="font-size:30pt;font-family:cairo;font-weight:bold;border-bottom:2px solid grey;	";> Shopping Cart </h1>
+                    <h1 class="text-center" style="font-size:30pt;font-family:cairo;font-weight:bold;border-bottom:2px solid grey;	";> បញ្ជីទំនេញកម្មង់ </h1>
                 </div>
             </div>
         </div>
@@ -20,70 +29,75 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="shoping__product">Products</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
+                                    <th class="shoping__product">ផលិតផល</th>
+                                    <th>តម្លៃ</th>
+                                    <th>ចំនួន</th>
+                                    <th>សរុប</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php
+
+                                while($row = mysqli_fetch_array($result))
+                                    {
+                            ?>
+
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-3.jpg" alt="">
-                                        <h5>Organic Bananas</h5>
+                                        <img src="img/product/<?= $row['cart_image'];?>" style="width:150px;" alt="">
+                                        <h5><?= $row['cart_name'];?></h5>
                                     </td>
                                     <td class="shoping__cart__price">
-                                        $69.00
+                                       <span class="fa fa-dollar" style="font-size:20px;font-weight:bold;"><?= $row['cart_price'];?></span> 
                                     </td>
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">
                                             <div class="pro-qty">
-                                                <input type="text" value="1">
+                                                <input type="text" value="<?= $row['cart_quantity'];?>">
                                             </div>
                                         </div>
                                     </td>
                                     <td class="shoping__cart__total">
-                                        $69.99
+                                    <span class="fa fa-dollar" style="font-size:20px;font-weight:bold;"><?= $row['cart_total'];?></span>
                                     </td>
                                     <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
+                                        <a href="include/cart_delete.php?id=<?= $row['cart_id'];?>"><span class="icon_close"></span></a>
                                     </td>
                                 </tr>
+                            <?php
+
+                                    };                                        
+
+                            ?>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 d-flex justify-content-between">
                     <div class="shoping__cart__btns">
-                        <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-                        <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
-                            Upadate Cart</a>
+                        <a href="shop.php?id=1" class="primary-btn cart-btn">ជ្រើសរើសទំនេញបន្ថែម</a>
+                    </div>
+                    <?php
+                                    
+                                        $result2 = mysqli_query($con, 'SELECT SUM(cart_total) AS total FROM carts'); 
+                                        $row2 = mysqli_fetch_assoc($result2); 
+                                        $sum = $row2['total'];
+                                            
+                    ?>  
+
+                    <div class="total border-bottom">
+                        <p style="font-size:20px; color:black; margin-right:250px;"><b> តម្លៃសរុប : <span class="ml-4 text-danger" style="font-size:25px;">$ <?= $sum; ?></span></b></p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="shoping__continue">
-                        <div class="shoping__discount">
-                            <h5>Discount Codes</h5>
-                            <form action="#">
-                                <input type="text" placeholder="Enter your coupon code">
-                                <button type="submit" class="site-btn">APPLY COUPON</button>
-                            </form>
-                        </div>
+                <div class="col-lg-12 d-flex justify-content-end mt-5 ">
+                <div class="shoping__cart__btns ">
+                        <a href="checkout.php?id=3" class="primary-btn cart-btn bg-warning fa fa-dollar">គិតលុយឥឡូវ</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="shoping__checkout">
-                        <h5>Cart Total</h5>
-                        <ul>
-                            <li>Subtotal <span>$454.98</span></li>
-                            <li>Total <span>$454.98</span></li>
-                        </ul>
-                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -25,7 +24,7 @@
     <!-- cart items -->
 		<?php
 		
-			include ("include/cart_item.php");
+			include ("include/cart_details.php");
 		
 		?>
     <!-- cart items End -->

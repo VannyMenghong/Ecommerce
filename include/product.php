@@ -13,14 +13,7 @@
                     <div class="section-title">
                         <h2>ទំនេញចម្រុះ</h2>
                     </div>
-                    <div class="featured__controls">
-                        <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".fruits">Oranges</li>
-                            <li data-filter=".fresh-meat">Fresh Meat</li>
-                            <li data-filter=".vegetables">Vegetables</li>
-                        </ul>
-                    </div>
+                
                 </div>
             </div>
             <div class="row featured__filter">
@@ -35,7 +28,7 @@
                         <div  class="featured__item__pic set-bg" data-setbg="img/product/<?= $row['pro_image'];?>">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="include/cart_add.php?id=<?= $row['pro_id']; ?>" type="submit" value="send"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="details.php?id=<?= $row['pro_id']; ?>" type="submit" value="send"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">

@@ -26,7 +26,7 @@
                 ?>
                     
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/slide/<?=$row['slide_image'];?>" style="width:100%;height:500px;">
+                        <div class="categories__item set-bg" data-setbg="img/slide/<?=$row['slide_image'];?>" style="width:100%;height:300px;">
                             <h5><a href="#"><?=$row['slide_title'];?></a></h5>
                         </div>
                     </div>
