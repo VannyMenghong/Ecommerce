@@ -9,6 +9,7 @@
         $checkout="";
         $contact="";
         $home = "";
+        $countdown = "";
       
         switch($id){
             case '0':
@@ -26,10 +27,27 @@
             case '4':
                 $contact = "active";
                 break;
+            case '5':
+                $countdown = "active";
+                break;
            
         }
-    
+        //total tag
+        include ("dbconnection/db.php");
+        $sql = "SELECT sum(cart_total) AS total FROM carts;";
+        $result = mysqli_query($con, $sql);
+        $row = mysqli_fetch_array($result);
+        $total = $row['total'];
 
+        //items count
+        $sql2 = "SELECT COUNT(cart_id) AS row_cnt FROM carts; ";
+        $result2 = mysqli_query($con, $sql2);
+        $row2 = mysqli_fetch_array($result2);
+        $row_cnt = $row2['row_cnt'];
+
+        // loop products Categories 
+        $sql3 = "SELECT * FROM slides ; ";
+        $result3 = mysqli_query($con, $sql3);   
    ?>
    
    
@@ -41,7 +59,7 @@
                         <div class="header__top__left">
                             <ul>
                                 <li><i class="fa fa-envelope"></i>Vannyhong99@gmail.com</li>
-                                <li>ដឹកជូនដោយមិនគិតថ្លៃសេវា</li>
+                                <li class="<?= $countdown; ?>">ដឹកជូនដោយមិនគិតថ្លៃសេវា<a href="../countdown.php?id=5"><i class="fas fa-shipping-fast"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,11 +95,13 @@
                     </nav>
                 </div>
                 <div class="col-lg-2    ">
-                    <div class="header__cart">
-                        <ul  class="d-flex">
-                            
-                            <li><a href="./cart.php?id=2"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                            <p>សរុប : <span class="text-danger">100$</span></p>
+                    <div class="header__cart ">
+                        <ul  class="d-flex bg-white pt-2 px-2 shadow">
+                        
+                            <li>
+                                
+                                <a href="./cart.php?id=2"><i class="fa fa-shopping-bag"></i> <span><?= $row_cnt; ?></span></a></li>
+                            <p>សរុប : <span class="text-danger" style="font-weight:bold;">$ <?= $total; ?></span></p>
                         </ul>
                        
                     </div>
@@ -104,19 +124,28 @@
                             <i class="fa fa-bars"></i>
                             <span>ប្រភេទទំនិញ</span>
                         </div>
-                        <ul>
-                            <li><a​ href="#">Fresh Meat</a​></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
+                       
+                        <ul style="padding-left:1px;border:none;background-color:white;padding-top:-10px;" class="shadow">
+                        <?php
+                            //loop products Categories 
+                            $sql3 = "SELECT * FROM slides ; ";
+                            $result3 = mysqli_query($con, $sql3);
+                            while ($row3 = mysqli_fetch_array($result3))
+                                {
+
+                        ?>
+                            <li style="padding:15px;border-bottom:1px solid grey;cursor:pointer; opacity:0.7;width:100%;">
+                            <a​ style="" href="#"><?= $row3['slide_title']; ?></a​></li> 
+                                    
+                            <?php
+
+                                };
+                                
+                        ?>
+                                                
                         </ul>
+                        
+
                     </div>
                 </div>
                 <div class="col-lg-9">

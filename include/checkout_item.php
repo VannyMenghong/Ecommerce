@@ -70,21 +70,21 @@
                                 ?>
 
                                 <ul>
-                                    <li><?= $row['cart_name']; ?><span>$<?= $row['cart_price'];?></span></li>
+                                    <li><?= $row['cart_name']; ?><span>$<?= $row['cart_price'];?>x <?= $row['cart_quantity']; ?>set = <?= $row['cart_price'] * $row['cart_quantity'];?>$</span></li>
                                 </ul>
 
                                 <?php
                                     
                                         };
 
-                                        $result2 = mysqli_query($con, 'SELECT SUM(cart_total) AS total FROM carts'); 
+                                        $result2 = mysqli_query($con, 'SELECT  SUM(cart_total) AS total FROM carts'); 
                                         $row2 = mysqli_fetch_assoc($result2); 
                                         $sum = $row2['total'];
                                     
                                         
                                 ?>
 
-                                <div class="checkout__order__total">តម្លៃសរុប <span>$<?= $sum; ?></span></div>
+                                <div class="checkout__order__total">តម្លៃសរុប <span>$<?= $sum; ?> </span></div>
                                 <div class="checkout__input__checkbox">
                                     <label for="acc-or">
                                         តើអ្នកបង្កើតគណនីទិញទំនេញនៅទីនេះទេ?
@@ -96,7 +96,7 @@
                                     បង់ប្រាក់តាមរយះកាត់ធានាគារទៀតនោះទេ 
                                     ងាយស្រួលទិញ ងាយស្រួលបង់ប្រាក់ ។</p>
                                
-                                <a href="index.php?id=0" class="site-btn">ចាប់ផ្ដើមកម្មង់
+                                <a href="../ecommerce/countdown.php?id=5" class="site-btn">ចាប់ផ្ដើមកម្មង់
                                 </a>
                             </div>
                         </div>

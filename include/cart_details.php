@@ -43,15 +43,21 @@
                         <div class="product__details__quantity">
                             <div class="quantity">
                                 <form action="../ecommerce/include/cart_add.php?id=<?= $row['pro_id']; ?>" method="POST">
-                                    
-                                        <input type="number" name="qty" >
-                                        <input type="submit" value="send">
+                                    <div class="product__details__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" name="qty" value="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                       
+                                        <input type="submit" value="send" class="primary-btn">
                                 </form>
                             </div>  
                         </div>
                         <!--<a href="../ecommerce/include/cart_add.php?id=" class="primary-btn">បូកបញ្ចូល</a> -->
                         
-                        <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                        <a href="#" class="heart-icon "><span class="icon_heart_alt text-danger "></span></a>
                         <ul>
                             <li><b>ស្ថានភាប​  :</b> <span>In Stock</span></li>
                             <li><b>ការដឹកជញ្ជូន​  :</b> <span> 1 ទៅ 2 ម៉ោង <samp>( ដឹកជញ្ជូនដោយមិនគិតថ្លៃ )</samp></span></li>
