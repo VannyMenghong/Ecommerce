@@ -21,7 +21,7 @@
     
     ?>
 
-<h3 style="display:flex;justify-content:center;margin-top:-300px;">រយះពេល 45នាទីទៀត </h3>
+<h3 style="display:flex;justify-content:center;margin-top:-300px;">នឹងទៅដល់រយះពេល 45នាទីទៀត </h3>
 <div class="text-center">
     <a href="index.php?id=0" class="btn btn-danger ">ត្រឡប់ក្រោយ</a>
 </div>

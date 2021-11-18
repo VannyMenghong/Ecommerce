@@ -59,7 +59,7 @@
                         <div class="header__top__left">
                             <ul>
                                 <li><i class="fa fa-envelope"></i>Vannyhong99@gmail.com</li>
-                                <li class="<?= $countdown; ?>">ដឹកជូនដោយមិនគិតថ្លៃសេវា<a href="../countdown.php?id=5"><i class="fas fa-shipping-fast"></i></a></li>
+                                <li class="<?= $countdown; ?>">ដឹកជូនដោយមិនគិតថ្លៃសេវា<a href="../ecommerce/countdown.php?id=5"><i class="fas fa-shipping-fast"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="../index.html"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-7">

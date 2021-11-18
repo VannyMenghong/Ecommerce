@@ -13,7 +13,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="text-center" style="font-size:30pt;font-family:cairo;font-weight:bold;border-bottom:2px solid grey;	";> បញ្ជីទំនេញកម្មង់ </h1>
+                    <h1 class="text-center" style="font-size:30pt;font-family:cairo;font-weight:bold;border-bottom:2px solid grey;
+                    	";> បញ្ជីទំនិញកម្មង់ </h1>
                 </div>
             </div>
         </div>
@@ -78,7 +79,7 @@
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-between">
                     <div class="shoping__cart__btns">
-                        <a href="shop.php?id=1" class="primary-btn cart-btn">ជ្រើសរើសទំនេញបន្ថែម</a>
+                        <a href="shop.php?id=1" class="primary-btn cart-btn">ជ្រើសរើសទំនិញបន្ថែម</a>
                     </div>
                     <?php
                                     

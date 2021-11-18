@@ -2,7 +2,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="text-center" style="font-size:30pt;font-family:cairo;font-weight:bold;border-bottom:2px solid grey;	";> Contact Us Now </h1>
+                    <h1 class="text-center" style="font-size:30pt;font-family:cairo;font-weight:bold;border-bottom:2px solid grey;
+                    	";>ទំនាក់ទំនងពួកយើង</h1>
                 </div>
             </div>
         </div>
@@ -14,29 +15,29 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_phone"></span>
-                        <h4>Phone</h4>
-                        <p>+01-3-8888-6868</p>
+                        <h4>លេខទូរស័ព្ទ</h4>
+                        <p>077 645 994</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_pin_alt"></span>
-                        <h4>Address</h4>
-                        <p>60-49 Road 11378 New York</p>
+                        <h4>អាស័យដ្ឋាន</h4>
+                        <p>ផ្លូវ 219 ផ្ទះលេខ No:19 សង្កាត់ផ្សារដេប៉ូ ខណ្ខទួលគក រាជធានីភ្នំពេញ</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_clock_alt"></span>
-                        <h4>Open time</h4>
-                        <p>10:00 am to 23:00 pm</p>
+                        <h4>បើក 24 ម៉ោង</h4>
+                        <p>00:00 am ទៅ 24:00 pm</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_mail_alt"></span>
-                        <h4>Email</h4>
-                        <p>hello@colorlib.com</p>
+                        <h4>អុីម៉ែល</h4>
+                        <p>Vannyhong99@g</p>
                     </div>
                 </div>
             </div>
@@ -52,10 +53,10 @@
         <div class="map-inside">
             <i class="icon_pin"></i>
             <div class="inside-widget">
-                <h4>New York</h4>
+                <h4>Phnom Penh</h4>
                 <ul>
-                    <li>Phone: +12-345-6789</li>
-                    <li>Add: 16 Creek Ave. Farmingdale, NY</li>
+                    <li>Phone: 077 645 994</li>
+                    <li>Add: Phnom Penh Street 219, Songkat Psar Depo</li>
                 </ul>
             </div>
         </div>
@@ -63,29 +64,5 @@
     <!-- Map End -->
 
     <!-- Contact Form Begin -->
-    <div class="contact-form spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact__form__title">
-                        <h2>Leave Message</h2>
-                    </div>
-                </div>
-            </div>
-            <form action="#">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Your name">
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Your Email">
-                    </div>
-                    <div class="col-lg-12 text-center">
-                        <textarea placeholder="Your message"></textarea>
-                        <button type="submit" class="site-btn">SEND MESSAGE</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+  
     <!-- Contact Form End -->

@@ -13,7 +13,7 @@
 
     <section class="categories my-5">
     <div class="section-title">
-    <h2>ប្រភេទទំនេញ</h2>
+    <h2>ប្រភេទទំនិញ</h2>
 </div>
         <div class="container">
             <div class="row">
