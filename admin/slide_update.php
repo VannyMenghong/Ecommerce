@@ -27,7 +27,11 @@
 		include ("include/header.php");
 		
 	?>
+	<?php
+		
+		include ("include/update_page.php");
 	
+	?>
 	
 		</div>
 	</div>

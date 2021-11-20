@@ -27,7 +27,11 @@
 		include ("include/header.php");
 		
 	?>
+	<?php
+		
+		include ("include/slide_add_page.php");
 	
+	?>
 	
 		</div>
 	</div>

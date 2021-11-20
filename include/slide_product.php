@@ -1,7 +1,7 @@
 <?php
 
     include ("dbconnection/db.php");
-    $sql = "SELECT * FROM slides;";
+    $sql = "SELECT * FROM slides WHERE visible ='1';";
     $result = mysqli_query($con, $sql);
     
 

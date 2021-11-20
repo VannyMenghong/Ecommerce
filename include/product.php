@@ -1,7 +1,7 @@
 <?php
 
     include ("dbconnection/db.php");
-    $sql = "SELECT * FROM products;";
+    $sql = "SELECT * FROM products WHERE visible='1';";
     $result = mysqli_query($con,$sql);
 
 
@@ -33,12 +33,11 @@
                         </div>
                         <div class="featured__item__text">
                             <h6 class=""><a href="#"><?= $row['pro_name']; ?></a></h6>
-                            <h5><?= $row['pro_price'] ;  ?> <span class=" fa fa-dollar text-success"> </span></h5>
+                            <h5><?= $row['pro_price'] ;  ?> <span class=" fa fa-dollar text-success"> /kg</span></h5>
                         </div>
                     </div>
                 </div>  
                 <?php
-
                         };
 
                 ?>

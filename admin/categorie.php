@@ -27,7 +27,11 @@
 		include ("include/header.php");
 		
 	?>
+	<?php
+		
+		include ("include/categorie_show_page.php");
 	
+	?>
 	
 		</div>
 	</div>

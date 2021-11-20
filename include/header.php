@@ -66,7 +66,7 @@
                     <div class="col-lg-6">
                         <div class="header__top__right">
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a href="admin/slide.php?p=slide.php"><i class="fa fa-user text-warning"></i> Admin</a>
                             </div>
                         </div>
                     </div>
